@@ -1,0 +1,90 @@
+
+# Visualizadores Léxicos Interactivos
+
+**Autora**: Sara Badia Climent  
+**Proyecto de investigación**: "Hacia la caracterización diacrónica del siglo XX" (CIPROM/2021/038)  
+**Universitat de València – Grupo Val.Es.Co.**
+
+---
+
+## 📊 Descripción general
+
+Este repositorio contiene dos herramientas interactivas creadas con **Dash** y **Plotly** para el análisis visual de la evolución léxica a lo largo del tiempo. Ambas se fundamentan en un corpus microdiacrónico de léxico gamer y están pensadas para facilitar la exploración, el filtrado y la comparación de palabras o categorías léxicas.
+
+### 1. Visualizador de burbujas animadas
+
+- Representa el uso de palabras o categorías como burbujas cuya **tamaño varía según la frecuencia**.
+- El eje x muestra la palabra o categoría; el eje y, la frecuencia.
+- La visualización está animada año a año.
+- Incluye opciones de:
+  - Normalización (logarítmica, por mil, min-max, etc.)
+  - Media móvil de 5 años
+  - Filtros por categorías y palabras
+
+### 2. Gráfico lineal por año
+
+- Representa la **evolución temporal de palabras o categorías** mediante líneas.
+- Permite seleccionar un **rango de años** y aplicar distintos filtros.
+- Incluye:
+  - Selección automática de las palabras más frecuentes
+  - Media móvil opcional
+  - Múltiples tipos de normalización
+  - Visualización por palabra o categoría
+
+---
+
+## 🗂️ Estructura del repositorio
+
+```
+📁 visualizadores-lexico/
+│
+├── app_burbujas.py             # Script del visualizador de burbujas animadas
+├── app_lineas.py               # Script del visualizador lineal
+├── Prueba visualización.xlsx   # Archivo de datos de ejemplo
+├── LICENSE                     # Licencia CC BY 4.0
+├── README.md                   # Este archivo
+└── requirements.txt            # Dependencias del entorno
+```
+
+---
+
+## ▶️ Cómo ejecutar los visualizadores
+
+1. **Crea un entorno virtual (opcional pero recomendado):**
+
+```bash
+python -m venv venv
+source venv/bin/activate  # o .\venv\Scripts\activate en Windows
+```
+
+2. **Instala las dependencias:**
+
+```bash
+pip install -r requirements.txt
+```
+
+3. **Ejecuta el script que quieras:**
+
+```bash
+python app_burbujas.py
+# o
+python app_lineas.py
+```
+
+4. Abre tu navegador en `http://127.0.0.1:8050/`.
+
+---
+
+## 🧠 Cita sugerida
+
+> Badia Climent, S. (2025). *Visualizadores léxicos interactivos para el análisis microdiacrónico*. Proyecto CIPROM/2021/038, Universitat de València.
+
+---
+
+## 📜 Licencia
+
+**Licencia**: [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.es)  
+Puedes copiar, modificar y reutilizar este código incluso con fines comerciales, siempre que cites a la autora y al proyecto original.
+
+© Sara Badia Climent – 2025  
+Contacto: sara.badia@uv.es

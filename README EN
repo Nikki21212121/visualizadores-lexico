@@ -1,0 +1,74 @@
+
+# Animated and Comparative Visualizers of Lexical Frequency
+
+This project provides two independent Dash + Plotly apps designed to visualize the lexical evolution of words and categories over time. Both tools are based on a microdiachronic corpus of 20th and 21st century Spanish language.
+
+---
+
+## 📌 Tools Included
+
+1. **Bubble Chart Visualizer**
+   - Animated evolution of words or categories.
+   - Bubble size corresponds to lexical frequency.
+   - Interactive filters for normalization type, word/category selection, and moving average.
+
+2. **Line Chart Visualizer**
+   - Static and detailed evolution of word or category frequencies over time.
+   - Includes year-range slider and automatic top-N selection.
+   - Offers various normalizations and optional rolling average.
+
+---
+
+## 📁 Files
+
+- `bubble_visualizer.py` → Animated bubble chart app.
+- `line_visualizer.py` → Comparative line chart app.
+- `README_visualizadores.txt` → Project documentation (this file).
+- `requirements.txt` → Required Python libraries.
+- Excel file → Your own data in `.xlsx` format (columns: "Palabra", "Categoría", years...).
+
+---
+
+## ▶️ How to Run the Visualizers
+
+1. **Create a virtual environment (optional but recommended):**
+
+```bash
+python -m venv venv
+source venv/bin/activate  # or .\venv\Scripts\activate on Windows
+```
+
+2. **Install dependencies:**
+
+```bash
+pip install -r requirements.txt
+```
+
+3. **Run the desired script:**
+
+```bash
+python app_burbujas.py
+# or
+python app_lineas.py
+```
+
+4. Open your browser at `http://127.0.0.1:8050/`.
+---
+
+## 📘 License and Attribution
+
+This work is licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
+You may reuse, modify, and distribute this code freely, even for commercial purposes, as long as you cite the author and project.
+
+**Suggested citation:**
+
+Badia Climent, S. (2025). *Lexical Frequency Visualizers with Dash and Plotly*. Project CIPROM/2021/038, Universitat de València.
+
+---
+
+## 📬 Contact
+
+- Author: **Sara Badia Climent**
+- Project: *Towards a diachronic characterization of the 20th century* (CIPROM/2021/038)
+- Affiliation: Universitat de València – Grupo Val.Es.Co.
+- Email: sara.badia@uv.es
